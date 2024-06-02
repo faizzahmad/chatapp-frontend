@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,3 +10,48 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+body{
+  background-image: url('/bg.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border :  1px solid rgba(255, 255, 255, 0.125);
+}
+
+.darkblue{
+  background-color: rgba(17, 25, 40, 0.5);
+}
+
+.darkblue2{
+  background-color: rgba(17, 25, 40, 0.7);
+}
+
+.pchat{
+  background-color: rgba(17, 25, 40, 0.3);
+}
+
+.buttoncolor{
+  background-color: rgba(230, 74, 105, 0.553);
+  transition: all 0.3s;
+
+  &:hover{
+    background-color: rgba(220, 20, 60, 0.796);
+  }
+}
+
+.modaldiv{
+  height: max-content;
+  width: max-content;
+}
+
+
+
